@@ -20,7 +20,7 @@ export default class App extends React.Component {
         {this.state.posts.map((post) => (
           <li key={post.id}>
             {post.id}
-            <p>Name:{post.name} . Gender:{post.gender} . House:{post.house}</p>
+            Name:{post.name} Gender:{post.gender}  House:{post.house}
           </li>
         ))}
       </ul>
