@@ -15,7 +15,7 @@ export default class App extends React.Component {
   }
   render() {
     return (
-      <ul>
+      <ul class="App-grid">
        
         {this.state.posts.map((post) => (
           <li key={post.id}>
