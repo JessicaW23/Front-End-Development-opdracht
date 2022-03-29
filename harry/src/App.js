@@ -16,11 +16,11 @@ export default class App extends React.Component {
   render() {
     return (
       <ul>
-        <h1 align="center">React App</h1>
+       
         {this.state.posts.map((post) => (
           <li key={post.id}>
             {post.id}
-            {post.name}.{post.gender}.{post.house}
+            <p>Name:{post.name} . Gender:{post.gender} . House:{post.house}</p>
           </li>
         ))}
       </ul>
