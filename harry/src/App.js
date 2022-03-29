@@ -1,39 +1,29 @@
-fetch("http://hp-api.herokuapp.com/api/characters")
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data);
-  });
-
-class ErrorBoundary extends React.Component {
+import React from "react";
+import "./App.css";
+//const { render } = require("@testing-library/react");
+export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { hasError: false };
+    this.state = { posts: [] };
   }
 
-  static getDerivedStateFromError(error) {
-    // Update state so the next render will show the fallback UI.
-    return { hasError: true };
+  componentDidMount() {
+    //api call
+    fetch("http://hp-api.herokuapp.com/api/characters")
+      .then((resp) => resp.json())
+      .then((resp) => this.setState({ posts: resp }));
   }
-
-  componentDidCatch(error, errorInfo) {
-    // You can also log the error to an error reporting service
-    logErrorToMyService(error, errorInfo);
-  }
-
   render() {
-    if (this.state.hasError) {
-      // You can render any custom fallback UI
-      return <h1>Something went wrong.</h1>;
-    }
-
-    return this.props.children;
-  }
-}
-
-function appendData(data) {
-  for (var i = 0; i < data.length; i++) {
-    var div = document.createElement("div");
-    div.innerHTML = "name";
-    mainContainer.appendChild(div);
+    return (
+      <ul>
+        <h1 align="center">React App</h1>
+        {this.state.posts.map((post) => (
+          <li key={post.id}>
+            {post.id}
+            {post.name}.{post.gender}.{post.house}
+          </li>
+        ))}
+      </ul>
+    );
   }
 }
