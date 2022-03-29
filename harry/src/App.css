@@ -4,3 +4,18 @@
     justify-content: center;
     font-family: 'Courier New', Courier, monospace;
   }
+
+  .App-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App-grid li {
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    list-style-type: none;
+  }
