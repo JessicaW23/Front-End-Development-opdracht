@@ -22,6 +22,7 @@ export default class App extends React.Component {
 
     this.setState({ character: filteredCharacters });
   }
+ 
 
   componentDidMount() {
     //api call
@@ -45,3 +46,25 @@ export default class App extends React.Component {
     );
   }
 }
+// render() {
+//  return (
+//    <ul class="App-grid">
+//     
+//      {this.state.character.map((character) => (
+//        <li key={character.id}>
+//          {character.id}
+//          <p>Name:{character.name} - {character.alternate_names}</p>
+//          <p>Birth date:{character.dateOfBirth}</p>
+//          <p>Species:{character.species}</p>
+//          <p>Gender:{character.gender}</p>
+//          <p>Ancestry:{character.ancestry}</p>
+//          <p>Eye colour:{character.eyeColour}</p>
+//          <p>Hair colour:{character.hairColour}</p>
+//          <p>Wand:{character.wand.wood} - {character.wand.core} - {character.wand.length}</p>
+//          <p>Patronus:{character.patronus}</p>
+//          <p>{character.Image}</p>
+//        </li>
+//      ))}
+//    </ul>
+//  );
+// }
