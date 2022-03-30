@@ -42,7 +42,7 @@ export default class App extends React.Component {
             <p><span onClick={this.houseFilter(character.house)}>House:{character.house}</span></p>
           </li>
         ))}
-      </ul>
+      </li>
     );
   }
 }
