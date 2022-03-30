@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: cadetblue;
+  background-color:rgb(172, 131, 97);
 }
 
 code {
@@ -14,7 +14,3 @@ code {
     monospace;
 }
 
-#root {
-  font-size: 20px;
-  font-family: 'Harry Potter', sans-serif;
-}
