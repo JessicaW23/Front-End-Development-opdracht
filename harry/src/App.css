@@ -22,6 +22,12 @@ background: #f0f0f0;
   list-style-type: none;
 }
 
-#root{
+
+.paspoort{
   font-family: Harry Potter;
+  font-size: 20px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  list-style-type: none;
 }
