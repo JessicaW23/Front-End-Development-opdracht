@@ -36,9 +36,7 @@ export default class App extends React.Component {
             {character.id}
             <p>Name:{character.name}</p>
             <p>Gender:{character.gender}</p>
-            <p>
-              <span>House:{character.house}</span>
-            </p>
+            <p><span>House:{character.house}</span></p>
           </button>
         ))}
       </ul>

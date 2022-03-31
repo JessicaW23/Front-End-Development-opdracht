@@ -4,12 +4,10 @@ export default Passport;
 
 function Passport(props) {
   const { name } = props.characters;
-
   const [setCharactersDetails] = useState([]);
   const [error, setErrors] = useState("");
   const [loading, setLoading] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
-
 
   const onClick = () => {
     setLoading(true);
@@ -42,7 +40,7 @@ function Passport(props) {
       {showDetails ? (
         <div className="Passport-details">
           <h4>Details</h4>
-          <p>Name:{characters.name}</p>
+
         </div>
       ) : null}
     </li>
