@@ -51,7 +51,7 @@ export default class App extends React.Component {
 // render() {
 //  return (
 //    <ul class="App-grid">
-//     
+     
 //      {this.state.character.map((character) => (
 //        <li key={character.id}>
 //          {character.id}
