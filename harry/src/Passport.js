@@ -9,6 +9,7 @@ function Passport(props) {
   const [loading, setLoading] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
 
+
   const onClick = () => {
     setLoading(true);
     setShowDetails(!showDetails);
@@ -40,7 +41,7 @@ function Passport(props) {
       {showDetails ? (
         <div className="Passport-details">
           <h4>Details</h4>
-          <p>Name:{character.name}</p>
+          <p>Name:{characters.name}</p>
         </div>
       ) : null}
     </li>
