@@ -26,6 +26,7 @@ export default class App extends React.Component {
     fetch("http://hp-api.herokuapp.com/api/characters")
       .then((resp) => resp.json())
       .then((resp) => this.setState({ character: resp }));
+      
   }
 
   render() {
