@@ -35,6 +35,12 @@ export default class App extends React.Component {
         {this.state.character.map((character) => (
           <button className="paspoort">
             {character.id}
+
+            {
+              character.map(character => (
+                <Passport key={character.name} character={character} />
+              ))}
+
             <p>Name:{character.name}</p>
             <p>Gender:{character.gender}</p>
             <p><span>House:{character.house}</span></p>
