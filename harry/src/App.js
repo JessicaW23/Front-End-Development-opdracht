@@ -48,6 +48,8 @@ export default class App extends React.Component {
     );
   }
 }
+
+// deze info  moet in de reload van de pagina na klikken van character
 // render() {
 //  return (
 //    <ul class="App-grid">
@@ -64,7 +66,7 @@ export default class App extends React.Component {
 //          <p>Hair colour:{character.hairColour}</p>
 //          <p>Wand:{character.wand.wood} - {character.wand.core} - {character.wand.length}</p>
 //          <p>Patronus:{character.patronus}</p>
-//          <p>{character.Image}</p>
+//          <p><img src={character.image} ></img></p>
 //        </li>
 //      ))}
 //    </ul>
