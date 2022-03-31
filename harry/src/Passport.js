@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Passport.css";
+export default Passport; 
 
 function Passport(props) {
   const { name } = props.characters;
@@ -47,5 +48,3 @@ function Passport(props) {
     </li>
   );
 }
-
-export default Passport;
