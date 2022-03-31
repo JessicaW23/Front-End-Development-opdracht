@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
+import Passport from "./Passport";
 //const { render } = require("@testing-library/react");
 export default class App extends React.Component {
   constructor(props) {
@@ -7,22 +8,18 @@ export default class App extends React.Component {
     this.state = { character: [] };
   }
 
-  houseFilter = house => () => {
-    console.log(house);
-    fetch(`http://hp-api.herokuapp.com/api/characters/house/${house}`)
-      .then((resp) => resp.json())
-      .then((resp) => this.setState({ character: resp }));
-  }
+  //houseFilter = (house) => () => {
+  // console.log(house);
+  // fetch(`http://hp-api.herokuapp.com/api/characters/house/${house}`)
+  //   .then((resp) => resp.json())
+  //   .then((resp) => this.setState({ character: resp }));
+  //};
 
-  filterCharacter = value => () => {
-    var filteredCharacters;
-    var character = this.state.character;
-
-    
-
-    this.setState({ character: filteredCharacters });
-  }
- 
+  //filterCharacter = (value) => () => {
+  // var filteredCharacters;
+  // var character = this.state.character;
+  // this.setState({ character: filteredCharacters });
+  //};
 
   componentDidMount() {
     //api call
@@ -30,18 +27,16 @@ export default class App extends React.Component {
       .then((resp) => resp.json())
       .then((resp) => this.setState({ character: resp }));
   }
+
   render() {
     return (
-      <ul class="App-grid">
-       
+      <ul className="App-grid">
         {this.state.character.map((character) => (
           <button className="paspoort">
-          <li key={character.id}>
             {character.id}
             <p>Name:{character.name}</p>
             <p>Gender:{character.gender}</p>
-            <p><span onClick={this.houseFilter(character.house)}>House:{character.house}</span></p>
-          </li>
+            <p><span>House:{character.house}</span></p>
           </button>
         ))}
       </ul>
@@ -53,7 +48,6 @@ export default class App extends React.Component {
 // render() {
 //  return (
 //    <ul class="App-grid">
-     
 //      {this.state.character.map((character) => (
 //        <li key={character.id}>
 //          {character.id}
