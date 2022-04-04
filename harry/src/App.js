@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
 import Passport from "./Passport";
 //const { render } = require("@testing-library/react");
@@ -39,6 +39,7 @@ export default class App extends React.Component {
             <p>Name:{character.name}</p>
             <p>Gender:{character.gender}</p>
             <p><span>House:{character.house}</span></p>
+            <Passport character={character}/>
           </button>
         ))}
       </ul>
