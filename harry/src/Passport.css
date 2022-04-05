@@ -1,11 +1,5 @@
 .Passport {
-    border-radius: 10px;
-    padding: 10px;
-    list-style-type: none;
-    flex: 1 0 calc(10% - 10px);
-    margin: 10px;
-    min-height: 100px;
-    transition: width 1s ease-in; 
+ background-color: #32363f;
 }
 
 .Passport:hover {
@@ -15,13 +9,54 @@
 .Passport.active {
     grid-column-end: span 2;
     grid-row-end: span 2;
-    background-image: url(afbeeldingen/burntpaper.png);
+    
 }
 
-.Passport-details {
-    color: rgb(0, 3, 157);
+.Passport-details{
+   display: grid;
+   color: #d4af37;
+   grid-template-columns: 1fr 1fr;
+   font-family: Harry Potter;
+   font-size: 15px;
 }
 
 .name{
-    color: rgb(255, 0, 51);
+    color: #d4af37;
+    grid-column: 2;
+}
+
+.species{
+    grid-column: 1;
+}
+
+.gender{
+    grid-column: 1;
+}
+
+.ancestry{
+    grid-column: 1;
+}
+
+.eye{
+    grid-column: 2;
+}
+
+.wand{
+    grid-column: 2;
+}
+
+.patronus{
+    grid-column: 2;
+}
+
+.foto{
+    grid-column: 1;
+}
+
+.date{
+    grid-column: 2;
+}
+
+.hair{
+    grid-column: 1;
 }
