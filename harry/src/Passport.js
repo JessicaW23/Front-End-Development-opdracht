@@ -23,22 +23,21 @@ function Passport(props) {
         <div className="Passport-details">
           <h4>Details</h4>
           {props.name}
-
-          <p>
+          <p className="name">
             Name:{props.character.name} - {props.character.alternate_names}
           </p>
-          <p>Birth date:{props.character.dateOfBirth}</p>
-          <p>Species:{props.character.species}</p>
-          <p>Gender:{props.character.gender}</p>
-          <p>Ancestry:{props.character.ancestry}</p>
-          <p>Eye colour:{props.character.eyeColour}</p>
-          <p>Haircolour: {props.character.hairColour}</p>
-          <p>
+          <p className="date">Birth date:{props.character.dateOfBirth}</p>
+          <p className="species">Species:{props.character.species}</p>
+          <p className="gender">Gender:{props.character.gender}</p>
+          <p className="ancestry">Ancestry:{props.character.ancestry}</p>
+          <p className="eye">Eye colour:{props.character.eyeColour}</p>
+          <p className="hair">Haircolour: {props.character.hairColour}</p>
+          <p className="wand">
             Wand:{props.character.wand.wood} - {props.character.wand.core} -{" "}
             {props.character.wand.length}
           </p>
-          <p>Patronus:{props.character.patronus}</p>
-          <p>
+          <p className="patronus">Patronus:{props.character.patronus}</p>
+          <p className="foto">
             <img src={props.character.image}></img>
           </p>
         </div>

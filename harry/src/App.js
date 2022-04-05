@@ -36,9 +36,8 @@ export default class App extends React.Component {
           <button className="paspoort">
             
             {character.id}
-            <p>Name:{character.name}</p>
-            <p>Gender:{character.gender}</p>
-            <p><span>House:{character.house}</span></p>
+            <img className="fotovoorkant" src={character.image} ></img>
+            <p className="naamvoorkant">{character.name}</p>
             <Passport character={character}/>
           </button>
         ))}
