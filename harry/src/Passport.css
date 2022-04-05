@@ -20,44 +20,4 @@
    font-size: 15px;
 }
 
-.name{
-    color: #d4af37;
-    grid-column: 2;
-}
 
-.species{
-    grid-column: 1;
-}
-
-.gender{
-    grid-column: 1;
-}
-
-.ancestry{
-    grid-column: 1;
-}
-
-.eye{
-    grid-column: 2;
-}
-
-.wand{
-    grid-column: 2;
-}
-
-.patronus{
-    grid-column: 2;
-}
-
-.foto{
-    grid-column: 1;
-    height: 150px;
-}
-
-.date{
-    grid-column: 2;
-}
-
-.hair{
-    grid-column: 1;
-}

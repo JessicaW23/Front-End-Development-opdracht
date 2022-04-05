@@ -22,8 +22,6 @@ function Passport(props) {
       {showDetails ? (
         <div className="Passport-details">
           {props.name}
-          <img className="foto" src={props.character.image}></img>
-          <p className="name">Name: {props.character.name}</p>
           <p className="date">Birth date: {props.character.dateOfBirth}</p>
           <p className="species">Species: {props.character.species}</p>
           <p className="gender">Gender: {props.character.gender}</p>
