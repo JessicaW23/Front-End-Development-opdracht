@@ -21,21 +21,28 @@
   list-style-type: none;
 }
 
-.paspoort{
+.paspoortbutton{
   font-family: Harry Potter;
+  border: none;
+  outline: none;
   font-size: 20px;
   border-radius: 10px;
   padding: 20px;
   list-style-type: none;
   background-image: url(afbeeldingen/Voorkant.png);
+  background-size: cover;
+  height: 500px;
+  width:390px;
 }
 
+
 .fotovoorkant{
-  height: 150px;
+  margin-top: 160px;
+  height: 210px;
 }
 
 .naamvoorkant{
-  color: rgb(255, 255, 0);
+  color: #D4AF37;
 }
 
 
