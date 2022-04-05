@@ -32,7 +32,8 @@ export default class App extends React.Component {
     return (
       <ul className="App-grid">
         {this.state.character.map((character) => (
-          <button className="paspoort">
+          //<img className="fotovoorkant" src="./afbeeldingen/Voorkant.png"></img>
+          <button className="paspoortbutton">
             {character.id}
             <img className="fotovoorkant" src={character.image}></img>
             <p className="naamvoorkant">{character.name}</p>
