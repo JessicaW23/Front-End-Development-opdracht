@@ -1,11 +1,3 @@
-/*.App {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
-  }
-*/
-
 .App-grid {
   font-size: 14px;
   display: grid;

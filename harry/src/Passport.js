@@ -17,20 +17,19 @@ function Passport(props) {
       className={`${showDetails ? "Passport active" : "Passport"}`}
       onClick={onClick}
     >
+      <button className="button" >Passport</button>
+
       {showDetails ? (
         <div className="Passport-details">
           {props.name}
-          <p className="date">Birth date: {props.character.dateOfBirth}</p>
-          <p className="species">Species: {props.character.species}</p>
-          <p className="gender">Gender: {props.character.gender}</p>
-          <p className="ancestry">Ancestry: {props.character.ancestry}</p>
-          <p className="eye">Eye colour: {props.character.eyeColour}</p>
-          <p className="hair">Haircolour: {props.character.hairColour}</p>
-          <p className="wand">
-            Wand: {props.character.wand.wood} - {props.character.wand.core} -{" "}
-            {props.character.wand.length}
-          </p>
-          <p className="patronus">Patronus: {props.character.patronus}</p>
+          <p>Birth date: {props.character.dateOfBirth}</p>
+          <p>Species: {props.character.species}</p>
+          <p>Gender: {props.character.gender}</p>
+          <p>Ancestry: {props.character.ancestry}</p>
+          <p>Eye colour: {props.character.eyeColour}</p>
+          <p>Haircolour: {props.character.hairColour}</p>
+          <p>Wand: {props.character.wand.wood} - {props.character.wand.core} - {props.character.wand.length}</p>
+          <p>Patronus: {props.character.patronus}</p>
         </div>
       ) : null}
     </li>

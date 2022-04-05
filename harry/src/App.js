@@ -32,7 +32,6 @@ export default class App extends React.Component {
     return (
       <ul className="App-grid">
         {this.state.character.map((character) => (
-          //<img className="fotovoorkant" src="./afbeeldingen/Voorkant.png"></img>
           <button className="paspoortbutton">
             {character.id}
             <img className="fotovoorkant" src={character.image}></img>
@@ -45,25 +44,3 @@ export default class App extends React.Component {
   }
 }
 
-// deze info  moet in de reload van de pagina na klikken van character
-// render() {
-//  return (
-//    <ul class="App-grid">
-//      {this.state.character.map((character) => (
-//        <li key={character.id}>
-//          {character.id}
-//          <p>Name:{character.name} - {character.alternate_names}</p>
-//          <p>Birth date:{character.dateOfBirth}</p>
-//          <p>Species:{character.species}</p>
-//          <p>Gender:{character.gender}</p>
-//          <p>Ancestry:{character.ancestry}</p>
-//          <p>Eye colour:{character.eyeColour}</p>
-//          <p>Hair colour:{character.hairColour}</p>
-//          <p>Wand:{character.wand.wood} - {character.wand.core} - {character.wand.length}</p>
-//          <p>Patronus:{character.patronus}</p>
-//          <p><img src={character.image} ></img></p>
-//        </li>
-//      ))}
-//    </ul>
-//  );
-// }

@@ -22,7 +22,16 @@
    color: #d4af37;
    grid-template-columns: 1fr 1fr;
    font-family: Harry Potter;
-   font-size: 15px;
+   font-size: 25px;
 }
 
-
+.button{
+    background-color: #7f0909;
+    font-size: 18px;
+    color: #d4af37;
+    margin: 0px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.241);
+}
