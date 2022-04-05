@@ -16,7 +16,6 @@
 }
 
 .App-grid li {
-  background: #f0f0f0;
   border-radius: 10px;
   padding: 20px;
   list-style-type: none;
@@ -25,10 +24,10 @@
 .paspoort{
   font-family: Harry Potter;
   font-size: 20px;
-  background: #f0f0f0;
   border-radius: 10px;
   padding: 20px;
   list-style-type: none;
+  background-image: url(afbeeldingen/Voorkant.png);
 }
 
 .fotovoorkant{
@@ -38,3 +37,5 @@
 .naamvoorkant{
   color: rgb(255, 255, 0);
 }
+
+

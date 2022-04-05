@@ -26,7 +26,6 @@ export default class App extends React.Component {
     fetch("http://hp-api.herokuapp.com/api/characters")
       .then((resp) => resp.json())
       .then((resp) => this.setState({ character: resp }));
-      
   }
 
   render() {
@@ -34,11 +33,10 @@ export default class App extends React.Component {
       <ul className="App-grid">
         {this.state.character.map((character) => (
           <button className="paspoort">
-            
             {character.id}
-            <img className="fotovoorkant" src={character.image} ></img>
+            <img className="fotovoorkant" src={character.image}></img>
             <p className="naamvoorkant">{character.name}</p>
-            <Passport character={character}/>
+            <Passport character={character} />
           </button>
         ))}
       </ul>
