@@ -30,8 +30,8 @@
   padding: 20px;
   list-style-type: none;
   background-image: url(afbeeldingen/Voorkant.png);
-  background-size: cover;
-  height: 500px;
+  background-size: 100% auto;
+
   width:390px;
 }
 
