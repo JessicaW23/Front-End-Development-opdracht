@@ -23,18 +23,24 @@ function Passport(props) {
         <div className="Passport-details">
           <h4>Details</h4>
           {props.name}
-          
-          <p>Name:{props.character.name} - {props.character.alternate_names}</p>
+
+          <p>
+            Name:{props.character.name} - {props.character.alternate_names}
+          </p>
           <p>Birth date:{props.character.dateOfBirth}</p>
           <p>Species:{props.character.species}</p>
           <p>Gender:{props.character.gender}</p>
           <p>Ancestry:{props.character.ancestry}</p>
           <p>Eye colour:{props.character.eyeColour}</p>
           <p>Haircolour: {props.character.hairColour}</p>
-          <p>Wand:{props.character.wand.wood} - {props.character.wand.core} - {props.character.wand.length}</p>
-         <p>Patronus:{props.character.patronus}</p>
-          <p><img src={props.character.image} ></img></p>
-         
+          <p>
+            Wand:{props.character.wand.wood} - {props.character.wand.core} -{" "}
+            {props.character.wand.length}
+          </p>
+          <p>Patronus:{props.character.patronus}</p>
+          <p>
+            <img src={props.character.image}></img>
+          </p>
         </div>
       ) : null}
     </li>
