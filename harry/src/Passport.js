@@ -17,8 +17,6 @@ function Passport(props) {
       className={`${showDetails ? "Passport active" : "Passport"}`}
       onClick={onClick}
     >
-      
-
       {showDetails ? (
         <div className="Passport-details">
           {props.name}
@@ -33,7 +31,6 @@ function Passport(props) {
             {props.character.wand.length}
           </p>
           <p className="patronus">Patronus: {props.character.patronus}</p>
-          
         </div>
       ) : null}
     </li>
