@@ -1,11 +1,15 @@
+@font-face {
+  font-family: Harry Potter;
+  src: url(../HarryP-MVZ6w.ttf);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Harry Potter;
+  font-size: 25px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgb(172, 131, 97);
+  background-color:rgb(139, 95, 58);
 }
 
 code {
@@ -13,5 +17,10 @@ code {
     monospace;
 }
 
+.titel{
+  margin-left: 35%;
+  padding: 0px;
+  color: black;
+}
 
 
