@@ -11,7 +11,7 @@ function Passport(props) {
   const onClick = () => {
     setShowDetails(!showDetails);
   };
-
+/* Super tof idee om een passpoort te maken! */
   return (
     <li
       className={`${showDetails ? "Passport active" : "Passport"}`}
@@ -38,5 +38,5 @@ function Passport(props) {
     </li>
   );
 }
-
+/*misschien kunnen jullie alle text in een <p> stoppen, waardoor het iets overzichterlijker word.*/
 export default Passport;
