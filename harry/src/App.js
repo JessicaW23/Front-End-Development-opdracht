@@ -8,18 +8,18 @@ export default class App extends React.Component {
     this.state = { character: [] };
   }
 
-  //houseFilter = (house) => () => {
-  // console.log(house);
-  // fetch(`http://hp-api.herokuapp.com/api/characters/house/${house}`)
-  //   .then((resp) => resp.json())
-  //   .then((resp) => this.setState({ character: resp }));
-  //};
+  houseFilter = (house) => () => {
+    console.log(house);
+    fetch(`http://hp-api.herokuapp.com/api/characters/house/${house}`)
+      .then((resp) => resp.json())
+      .then((resp) => this.setState({ character: resp }));
+  };
 
-  //filterCharacter = (value) => () => {
-  // var filteredCharacters;
-  // var character = this.state.character;
-  // this.setState({ character: filteredCharacters });
-  //};
+  filterCharacter = (value) => () => {
+    var filteredCharacters;
+    var character = this.state.character;
+    this.setState({ character: filteredCharacters });
+  };
 
   componentDidMount() {
     //api call
@@ -36,6 +36,12 @@ export default class App extends React.Component {
             {character.id}
             <img className="fotovoorkant" src={character.image}></img>
             <p className="naamvoorkant">{character.name}</p>
+
+            <p className="Filterhouse">
+              <span onClick={this.houseFilter(character.house)}>
+                Filter by House: {character.house}
+              </span>
+            </p>
             <Passport character={character} />
           </button>
         ))}
@@ -43,4 +49,3 @@ export default class App extends React.Component {
     );
   }
 }
-
