@@ -7,14 +7,9 @@
  background-color: #32363f;
 }
 
-.Passport:hover {
-    cursor: pointer;
-}
-
 .Passport.active {
     grid-column-end: span 2;
     grid-row-end: span 2;
-    
 }
 
 .Passport-details{
@@ -29,9 +24,9 @@
     background-color: #7f0909;
     font-size: 18px;
     color: #d4af37;
-    margin: 0px;
     border: none;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 2px 3px rgba(0, 0, 0, 0.241);
+    cursor: pointer;
 }
