@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Passport from "./Passport";
-//const { render } = require("@testing-library/react");
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -13,12 +12,6 @@ export default class App extends React.Component {
     fetch(`http://hp-api.herokuapp.com/api/characters/house/${house}`)
       .then((resp) => resp.json())
       .then((resp) => this.setState({ character: resp }));
-  };
-
-  filterCharacter = (value) => () => {
-    var filteredCharacters;
-    var character = this.state.character;
-    this.setState({ character: filteredCharacters });
   };
 
   componentDidMount() {

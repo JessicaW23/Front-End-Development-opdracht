@@ -28,15 +28,11 @@ function Passport(props) {
           <p>Ancestry: {props.character.ancestry}</p>
           <p>Eye colour: {props.character.eyeColour}</p>
           <p>Haircolour: {props.character.hairColour}</p>
-          <p>
-            Wand: {props.character.wand.wood} - {props.character.wand.core} -{" "}
-            {props.character.wand.length}
-          </p>
+          <p>Wand: {props.character.wand.wood} - {props.character.wand.core} - {props.character.wand.length}</p>
           <p>Patronus: {props.character.patronus}</p>
         </div>
       ) : null}
     </li>
   );
 }
-
 export default Passport;
